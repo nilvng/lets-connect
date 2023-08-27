@@ -14,6 +14,8 @@
 		C52CA5F82A9B3A7100958AFC /* LetsConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA5F72A9B3A7100958AFC /* LetsConnectTests.swift */; };
 		C52CA6022A9B3A7100958AFC /* LetsConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA6012A9B3A7100958AFC /* LetsConnectUITests.swift */; };
 		C52CA6042A9B3A7100958AFC /* LetsConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA6032A9B3A7100958AFC /* LetsConnectUITestsLaunchTests.swift */; };
+		C52CA6112A9B3EE200958AFC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA6102A9B3EE200958AFC /* Message.swift */; };
+		C52CA6152A9B413700958AFC /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA6142A9B413700958AFC /* PostRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C52CA5FD2A9B3A7100958AFC /* LetsConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52CA6012A9B3A7100958AFC /* LetsConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsConnectUITests.swift; sourceTree = "<group>"; };
 		C52CA6032A9B3A7100958AFC /* LetsConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C52CA6102A9B3EE200958AFC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C52CA6142A9B413700958AFC /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		C52CA5E52A9B3A7000958AFC /* LetsConnect */ = {
 			isa = PBXGroup;
 			children = (
+				C52CA6132A9B40F700958AFC /* Core */,
+				C52CA6122A9B40EE00958AFC /* UI */,
 				C52CA5E62A9B3A7000958AFC /* LetsConnectApp.swift */,
 				C52CA5E82A9B3A7000958AFC /* ContentView.swift */,
 				C52CA5EA2A9B3A7100958AFC /* Assets.xcassets */,
@@ -125,6 +131,22 @@
 				C52CA6032A9B3A7100958AFC /* LetsConnectUITestsLaunchTests.swift */,
 			);
 			path = LetsConnectUITests;
+			sourceTree = "<group>";
+		};
+		C52CA6122A9B40EE00958AFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C52CA6142A9B413700958AFC /* PostRowView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C52CA6132A9B40F700958AFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C52CA6102A9B3EE200958AFC /* Message.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52CA6112A9B3EE200958AFC /* Message.swift in Sources */,
+				C52CA6152A9B413700958AFC /* PostRowView.swift in Sources */,
 				C52CA5E92A9B3A7000958AFC /* ContentView.swift in Sources */,
 				C52CA5E72A9B3A7000958AFC /* LetsConnectApp.swift in Sources */,
 			);

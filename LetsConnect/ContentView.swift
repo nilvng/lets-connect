@@ -8,9 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var text = ""
+    @FocusState private var textFieldFocused: Bool
+    
+    @State var sample = [
+        Message(body: "Hello", authorName: "Nil", timestamp: 1),
+    ]
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        VStack {
+            List(sample) {
+                Text($0.body)
+            }
+            Spacer()
+        TextField("Type text...",text: $text)
+                .focused($textFieldFocused)
+                .disableAutocorrection(true)
+                .onSubmit {
+                    sample.append(Message(body: text, authorName: "Nil", timestamp: 2))
+                    text = ""
+                }
+        }.onAppear {
+            textFieldFocused = true
+        }
     }
 }
 
